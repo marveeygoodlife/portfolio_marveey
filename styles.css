@@ -263,17 +263,55 @@ span.pill {
   background: var(--accent);
   border-radius: 50px;
   border: none;
-  padding-inline: var(--space-4);
-  padding-block: var(--space-1);
+
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
   max-width: fit-content;
 }
 .pill-link {
   background: var(--bs-primary);
   color: var(--bs-light);
   border-radius: inherit;
-  padding-inline: var(--space-1);
+  padding-inline: var(--space-3);
+  padding-block: var(--space-2);
   text-decoration: none;
   font-weight: 400;
   font-size: 1rem;
+  margin-block: 3px;
+  margin-inline-start: var(--space-1);
+  margin-inline-end: var(--space-1);
 }
+.pill-link:hover {
+  text-decoration: underline;
+  box-shadow: 0 0 4px 8px rgba(38, 50, 72, 0.12) ;
+}
+.circle {
+  border-radius: 50%;
+  background: var(--bs-primary);
+  height: 40px;
+  width: 40px;
+    margin-inline-end: var(--space-2);
+
+ }
+ .left-border {
+  border-left: 2px solid var(--accent-hover);
+ }
+
+ footer {
+  color: var(--bs-light);
+ }
+ footer p, li {
+  font-size: 1rem;
+ }
+ ul {
+  list-style-type: none;
+ }
+ .faq-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
